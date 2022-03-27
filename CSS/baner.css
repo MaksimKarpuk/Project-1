@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
+:root {
+    --yellow: #FED100;
+    --black: #000000;
+    --white:#ffffff;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    max-width: 120rem;
+    background-color: var(--yellow);
+    margin: 0px auto;
+}
+.menu {
+    display: flex;
+    max-width: 81.5625rem;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    color:var(--black);
+ }
+.menu__items div:nth-child(1) {
+    padding: 0px 23px 0px 0px;   
+}
+.menu__items div:nth-child(2) {
+    padding: 0px 23px 0px 23px;
+}
+.menu__items div:nth-child(3) {
+    padding: 0px 23px 0px 23px;
+}
+.menu__items div:nth-child(4) {
+    padding: 0px 0px 0px 23px;
+}
+.menu__logo {
+     font-size: 1.875rem;
+     line-height: 2.285rem;
+     font-weight: 600;
+     color: var(--black);
+     
+ }
+.menu__number { 
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.content {
+    display: flex;
+    max-width: 81.5625rem;
+    margin: 0px auto;
+ }
+ .content__info-head {
+    font-size: 4.375rem;
+    line-height: 4.625rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 4rem;
+ }
+ .content__info-region {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 1.75rem;
+ }
+ .content__info-button button {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: #FF352B;
+    padding: 1rem 6rem 1rem 6rem;
+    margin-top: 3.125rem;
+ }
+.content__bonus { 
+    display: flex;
+    margin-top: 4.6875rem;
+}
+.content__bonus-replace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    color: var(--black);
+}
+.content__bonus-replace img {
+    margin-right: 0.625rem;
+}
+.content__bonus-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    color: var(--black);
+}
+.content__bonus-container img {
+    margin-right: 0.625rem;
+}
+.content__bonus-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    color: var(--black);
+}
+.content__bonus-price img {
+    margin-right: 0.625rem;
+}
+.menu a {
+    color: var(--black);
+}
