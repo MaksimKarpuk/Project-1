@@ -8,7 +8,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 header {
-    max-width: 120rem;
+    min-width: 120rem;
     background-color: var(--yellow);
     margin: 0px auto;
 }
