@@ -17,7 +17,7 @@ body {
     font-size: 1rem;
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav,ul,li {
@@ -33,6 +33,7 @@ a:hover {
 .banner { 
     background-color: var(--yellow);
     margin: 0px auto;
+
 }
 .conteiner {
     max-width: 82rem;
@@ -43,12 +44,40 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem ;
+    height: 4rem;
+    position: relative;
  }
 .header__logo { 
     font-size: 1.875rem;
     line-height: 2.285rem;
     font-weight: 600;
+}
+.banner__hamburger {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: none;
+}
+.banner__hamburger::before,
+.banner__hamburger::after {
+    content: "";
+    background-color: #000000;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+}
+.banner__hamburger::before {
+    top: 0;
+}
+.banner__hamburger::after {
+    bottom: 0;
+}
+.banner__hamburger span {
+    background-color: #000000;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    top: 0.937rem;
 }
 .header__menu {
     display: flex;
@@ -67,7 +96,7 @@ a:hover {
  }
 .banner__content {
     display: flex;
- }
+}
 .banner__info {
     flex: 0 1 50%;
  }
@@ -103,9 +132,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    margin-top: 4.6875rem;
-    margin-bottom: 5.25rem;
-   
+    margin:4.6875rem auto 5.25rem auto;
  }
 .banner__plus { 
     display: flex;
@@ -118,8 +145,38 @@ a:hover {
 .banner__image {
     max-width: 30rem;
     margin: -4.5rem auto 0 auto;
- }
+}
  .banner__image img {
     width: 100%;
     height: 100%;
+ }  
+ .banner__info__image {
+     max-width: 23rem;
+     max-height: 37rem;
+     display: none;
  }
+ @media (max-width:768px) {
+    .header__menu, .banner__number {
+        display: none;
+    }
+    .banner__hamburger {
+        display: block;
+    }
+    .banner__content {
+        display: block;
+        text-align: center;
+    }
+    .banner__info__image {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -3rem;
+    }
+    .banner__image img {
+        display: none;
+    }
+    .banner__bottom {
+        margin-top: 0;
+    }
+ }
+
