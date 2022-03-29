@@ -10,9 +10,11 @@
     --red:#FF352B;
     --orange:#FF772B;
 }
-
-body {
+html {
     font-size: 16px;
+}
+body {
+    font-size: 1rem;
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;;
@@ -30,7 +32,6 @@ a:hover {
 }
 .banner { 
     background-color: var(--yellow);
-    max-width: 120rem;
     margin: 0px auto;
 }
 .conteiner {
@@ -48,7 +49,6 @@ a:hover {
     font-size: 1.875rem;
     line-height: 2.285rem;
     font-weight: 600;
-    color: var(--black);
 }
 .header__menu {
     display: flex;
@@ -58,14 +58,12 @@ a:hover {
     font-size: 1.125rem;
     line-height: 1.375rem;
     font-weight: 500;
-    color:var(--black);
 }
 .banner__number {
     text-decoration: underline;
     font-size: 1.5rem;
     line-height: 1.875rem;
     font-weight: 600;
-    color: var(--black);
  }
 .banner__content {
     display: flex;
@@ -73,19 +71,17 @@ a:hover {
 .banner__info {
     flex: 0 1 50%;
  }
-.banner__title h1 {
+.banner__title {
     font-size: 4.375rem;
     line-height: 4.625rem;
     font-weight: 700;
-    color: var(--black);
     margin-top: 4rem;
     margin-bottom: 0;
  }
-.banner__subtitle p { 
+.banner__subtitle { 
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 600;
-    color: var(--black);
     margin-top: 1.75rem;
     margin-bottom: 0;
 }
@@ -118,8 +114,6 @@ a:hover {
     justify-content: center;
     font-size: 1rem;
     line-height: 1.3125rem;
-    font-weight: 400;
-    color: var(--black);
 }
 .banner__image {
     max-width: 30rem;
