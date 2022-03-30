@@ -201,12 +201,13 @@ a:hover {
         max-height: 24.75rem;
     }
     .banner__pluses {
-        display: block;
         position: relative;
         bottom: 2rem;
+        text-align: left;
+        flex-wrap: wrap;
     }
     .banner__plus {
-        margin: 2rem 0 2rem 0;
+        text-align: left;
     }
 
 }
