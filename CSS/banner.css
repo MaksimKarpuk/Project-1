@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --yellow: #FED100;
+    --black: #000000;
+    --white:#ffffff;
+    --red:#FF352B;
+    --orange:#FF772B;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+nav,ul,li {
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--red);
+}
+.banner { 
+    background-color: var(--yellow);
+    margin: 0 auto;
+
+}
+.conteiner {
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+ }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    position: relative;
+ }
+.header__logo { 
+    font-size: 1.875rem;
+    line-height: 2.285rem;
+    font-weight: 600;
+}
+.banner__hamburger {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: none;
+}
+.banner__hamburger::before,
+.banner__hamburger::after {
+    content: "";
+    background-color: var(--black);
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+}
+.banner__hamburger::before {
+    top: 0;
+}
+.banner__hamburger::after {
+    bottom: 0;
+}
+.banner__hamburger span {
+    background-color: var(--black);
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    top: 0.937rem;
+}
+.header__menu {
+    display: flex;
+    gap:2rem;
+ }
+.header__link { 
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+}
+.banner__number {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+ }
+.banner__content {
+    display: flex;
+}
+.banner__info {
+    flex: 0 1 50%;
+ }
+.banner__title {
+    font-size: 4.375rem;
+    line-height: 4.625rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-bottom: 0;
+ }
+.banner__subtitle { 
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+}
+.banner__bottom {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    padding: 1rem 6rem;
+    color:var(--white);
+    background-color: var(--red);
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3.125rem;
+ }
+.banner__botton:hover {
+    background-color: var(--orange);
+ }
+.banner__pluses {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin:4.6875rem auto 5.25rem auto;
+ }
+.banner__plus { 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+}
+.banner__image {
+    max-width: 30rem;
+    margin: -4.5rem auto 0 auto;
+}
+ .banner__image img {
+    width: 100%;
+    height: 100%;
+ }  
+ .banner__info-image {
+     max-width: 23rem;
+     max-height: 37rem;
+     display: none;
+ }
+ @media (max-width:768px) {
+    .header__menu, .banner__number {
+        display: none;
+    }
+    .banner__hamburger {
+        display: block;
+    }
+    .banner__content {
+        display: block;
+        text-align: center;
+    }
+    .banner__info-image {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -1.5rem;
+    }
+    .banner__image img {
+        display: none;
+    }
+    .banner__bottom {
+        margin-top: 0;
+    }
+    .banner__pluses {
+        justify-content: center;
+    }
+ }
+@media (max-width:570px) {
+    .banner__title {
+        font-size: 1.75rem;
+        line-height: 2.3rem;
+}
+    .banner__subtitle {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+    }
+    .banner__bottom {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .banner__info-image {
+        max-width: 15.5rem;
+        max-height: 24.75rem;
+    }
+    .banner__pluses {
+        position: relative;
+        bottom: 2rem;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+    .banner__plus {
+        text-align: left;
+    }
+
+}
