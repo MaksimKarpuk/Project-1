@@ -18,6 +18,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    
 }
 
 nav,ul,li {
@@ -32,7 +33,7 @@ a:hover {
 }
 .banner { 
     background-color: var(--yellow);
-    margin: 0px auto;
+    margin: 0 auto;
 
 }
 .conteiner {
@@ -61,7 +62,7 @@ a:hover {
 .banner__hamburger::before,
 .banner__hamburger::after {
     content: "";
-    background-color: #000000;
+    background-color: var(--black);
     width: 100%;
     height: 0.125rem;
     position: absolute;
@@ -73,7 +74,7 @@ a:hover {
     bottom: 0;
 }
 .banner__hamburger span {
-    background-color: #000000;
+    background-color: var(--black);
     width: 100%;
     height: 0.125rem;
     position: absolute;
@@ -150,7 +151,7 @@ a:hover {
     width: 100%;
     height: 100%;
  }  
- .banner__info__image {
+ .banner__info-image {
      max-width: 23rem;
      max-height: 37rem;
      display: none;
@@ -166,11 +167,11 @@ a:hover {
         display: block;
         text-align: center;
     }
-    .banner__info__image {
+    .banner__info-image {
         display: block;
         margin: 0 auto;
         position: relative;
-        top: -3rem;
+        top: -1.5rem;
     }
     .banner__image img {
         display: none;
@@ -178,5 +179,34 @@ a:hover {
     .banner__bottom {
         margin-top: 0;
     }
+    .banner__pluses {
+        justify-content: center;
+    }
  }
+@media (max-width:570px) {
+    .banner__title {
+        font-size: 1.75rem;
+        line-height: 2.3rem;
+}
+    .banner__subtitle {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+    }
+    .banner__bottom {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .banner__info-image {
+        max-width: 15.5rem;
+        max-height: 24.75rem;
+    }
+    .banner__pluses {
+        display: block;
+        position: relative;
+        bottom: 2rem;
+    }
+    .banner__plus {
+        margin: 2rem 0 2rem 0;
+    }
 
+}
