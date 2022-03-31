@@ -3,6 +3,7 @@
 @import url("./banner.css");
 @import url("./steps.css");
 @import url("./price.css");
+@import url("./autopark.css");
 
 :root {
   --yellow: #fed100;
@@ -10,4 +11,5 @@
   --white: #ffffff;
   --red: #ff352b;
   --orange: #ff772b;
+  --light_grey: #EBEBEB;
 }

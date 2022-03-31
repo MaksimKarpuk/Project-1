@@ -1,3 +1,8 @@
+:root {
+  --yellow: #fed100;
+  --black: #000000;
+  --light_grey: #EBEBEB;
+}
 .prices {
   padding: 0 0 6.5rem 0;
 }
@@ -30,7 +35,7 @@
 }
 .price__card {
   text-align: center;
-  border: 0.0625rem solid #ebebeb;
+  border: 0.0625rem solid var(--light_grey);
   padding: 5.25rem 0 3.75rem 0;
 }
 .price__card:nth-child(1):hover {
