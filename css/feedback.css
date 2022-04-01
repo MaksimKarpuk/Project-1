@@ -1,16 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
-:root {
-    --yellow: #fed100;
-    --black: #000000;
-    --white: #ffffff;
-    --red: #ff352b;
-    --orange: #ff772b;
-    --light_grey: #EBEBEB;
-  }
 .feedback {
     background-color: var(--yellow);
 }
-.conteiner { }
 .feedback__info {
     padding: 6rem 0 6rem 0;
 }
@@ -19,9 +9,10 @@
     margin: 0 0 3.75rem 0;
  }
  .feedback__items {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 1.25rem;
  }
 .feedback__item {
     text-align: start;
@@ -34,9 +25,6 @@
 }
 .feedback__item-data { 
  margin: 0 0.5rem 0 0;
-}
-.feedback__item-stars{
-    
 }
 .feedback__item-text {
     margin: 0 0 1.125rem 0;
@@ -58,4 +46,14 @@
 }
 .feedback__btn:hover {
     cursor: pointer;
+}
+@media (max-width:900px) {
+    .feedback__items {
+        display: flex;
+        flex-direction: column;
+    }
+    .feedback__item {
+        text-align: center;
+        padding: 0 1rem;
+    }
 }

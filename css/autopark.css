@@ -13,6 +13,9 @@
   text-align: center;
   margin: 0 0 3.75rem 0;
 }
+.car__image-hidden {
+  display: none;
+}
 .autopark__selector {
   display: flex;
   justify-content: center;
@@ -99,4 +102,69 @@
 .car__description-after::after {
   bottom: 0.2rem;
   transform: rotate(-45deg);
+}
+@media (max-width:1000px){
+  .car__description{
+    flex-direction: column;
+    align-items: center;
+  }
+  .car__description-before{
+    display: none;
+  }
+  .car__description-after{
+    display: none;
+  }
+  .car__image-hidden {
+    display: block;
+    margin: 0 auto;
+  }
+  .car__image {
+    display: none;
+  }
+  .autopark__selector-car {
+    border: none;
+    padding: 0 4rem 0 0;
+  }
+  .autopark__selector li:nth-child(3){
+    padding: 0;
+  }
+  .autopark__selector-car:hover {
+    border-bottom: 0.0625rem solid var(--yellow);
+  }
+  .car__description-list {
+    display: none;
+  }
+  .car__description-head::after {
+    content: "/ 1,5 тонны";
+  }
+  .car__description-head {
+    font-weight: 400;
+    margin:0 0 2rem 0;
+  }
+}
+@media (max-width:700px){
+  .car__image-hidden {
+    max-width: 20rem;
+  }
+  .car__description-head {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .autopark__selector-car {
+    font-size: 0.9rem;
+    padding: 0 1.5rem 0 0;
+  }
+}
+@media (max-width:340px){
+  .car__image-hidden {
+    max-width: 18rem;
+  }
+  .car__description-head {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .autopark__selector-car {
+    font-size: 0.9rem;
+    padding: 0 1.5rem 0 0;
+  }
 }
