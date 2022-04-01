@@ -14,3 +14,44 @@
   --orange: #ff772b;
   --light_grey: #EBEBEB;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+nav,
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--red);
+}
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+.button {
+  padding: 0.85rem 4.95rem 0.85rem 4.95rem;
+  background-color: var(--yellow);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
