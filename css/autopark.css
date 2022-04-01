@@ -1,10 +1,6 @@
 .autopark {
   padding: 0 0 3rem 0;
 }
-.conteiner {
-}
-.autopark__info {
-}
 .autopark__title {
   text-align: center;
   margin: 0 0 1rem 0;
@@ -38,24 +34,17 @@
   display: flex;
   justify-content: space-between;
 }
-.car__description-info {
-}
 .car__description-head {
   margin: 5rem 0 2rem 0;
 }
 .car__description-list li {
   margin: 0 0 1.75rem 0;
-  background: url(/TestTask/Project-1/img/autoperk_list-arrow.png) left
-    no-repeat;
+  background: url(../img/autoperk_list-arrow.png) left no-repeat;
   padding: 0 0 0 1.5rem;
 }
 .car__description-btn {
   text-align: center;
   padding: 0.85rem 4.95rem 0.85rem 4.95rem;
-}
-.car__description-image {
-}
-.car__image {
 }
 .car__description-before {
   position: relative;
@@ -125,7 +114,7 @@
     border: none;
     padding: 0 4rem 0 0;
   }
-  .autopark__selector li:nth-child(3){
+  .autopark__selector li:last-child {
     padding: 0;
   }
   .autopark__selector-car:hover {
