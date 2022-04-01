@@ -12,7 +12,7 @@
   --white: #ffffff;
   --red: #ff352b;
   --orange: #ff772b;
-  --light_grey: #EBEBEB;
+  --light_grey: #ebebeb;
 }
 * {
   box-sizing: border-box;
@@ -54,4 +54,9 @@ a:hover {
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 500;
+}
+.conteiner {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }

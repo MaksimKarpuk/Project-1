@@ -2,11 +2,6 @@
   background-color: var(--yellow);
   margin: 0 auto;
 }
-.conteiner {
-  max-width: 82rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 .header {
   display: flex;
   justify-content: space-between;
