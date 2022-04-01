@@ -1,26 +1,12 @@
 .prices {
   padding: 0 0 6.5rem 0;
 }
-.conteiner {
-}
-.prices__info {
-}
 .prices__title {
   text-align: center;
-}
-.title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
 }
 .prices__subtitle {
   text-align: center;
   padding: 1rem 0 0 0;
-}
-.subtitle {
-  font-size: 1.5rem;
-  line-height: 1.875rem;
-  font-weight: 600;
 }
 .prices__cards {
   display: grid;
@@ -30,7 +16,7 @@
 }
 .price__card {
   text-align: center;
-  border: 0.0625rem solid #ebebeb;
+  border: 0.0625rem solid var(--light_grey);
   padding: 5.25rem 0 3.75rem 0;
 }
 .price__card:nth-child(1):hover {
@@ -54,13 +40,6 @@
 .card__btn {
   padding: 0 0 5rem 0;
   cursor: pointer;
-}
-.button {
-  padding: 0.85rem 4.95rem 0.85rem 4.95rem;
-  background-color: var(--yellow);
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-weight: 500;
 }
 .prices__all {
   display: none;
