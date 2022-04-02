@@ -1,0 +1,93 @@
+.h4-head { 
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.form { }
+.form__content { 
+    max-width: 45.5rem;
+    margin: 7.75rem auto 6.5rem auto;
+}
+.form__head { }
+.form__subtitle {
+    margin: 0.625rem 0 1rem 0.625rem;
+}
+.form__text {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+}
+.form__text input:first-child{
+    margin: 0 4rem 0 0;
+}
+.form__text input { 
+    width: 18.75rem;
+    height: 4rem;
+    border-bottom: 0.0625rem solid var(--black);
+}
+.form__area { 
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 0 3.5rem 0;
+}
+.form_area-region { }
+.form__area-region-head {
+    margin: 1rem 0 0 0;
+ }
+ .form__area-region-field {
+    width: 18.75rem;
+    height: 4rem;
+    border-bottom: 0.0625rem solid var(--black);
+ }
+.form_area-city { }
+.form__area-city-head { 
+    margin: 1rem 0 0 0;
+}
+
+.form__pay {
+    margin: 0 0 3.5rem 0;
+ }
+.form__pay-head { 
+    margin: 0 0 1.5rem 2rem;
+}
+.form__pay-btn {
+    display: flex;
+    justify-content: center;
+    gap: 4.3rem;
+}
+.first-radio-btn { }
+.second-radio-btn { }
+.third-radio-btn { }
+.form__addservice { 
+    margin: 0 0 4.5rem 0;
+}
+.form__addservice-head {
+    width: 18.75rem;
+    background: url(/TestTask/Project-1/img/form-add-arrow.png) right no-repeat;
+    margin: 0 0 1rem 2rem;
+ }
+.addservice__header {
+    line-height: 2.5rem;
+ }
+.addservice__arrow { 
+    
+}
+.form__addservice-checkbox form { 
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+    margin: 0 0 0 2rem ;
+}
+.first__checkbox { }
+.second__checkbox { }
+.third__checkbox { }
+.fourth__checkbox { }
+.fifth__checkbox { }
+.form__footer { 
+    display: flex;
+}
+.form__footer-time {
+   
+ }
+.form__footer-btn { }
