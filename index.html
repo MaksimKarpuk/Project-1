@@ -261,6 +261,7 @@
       <div class="conteiner">
         <div class="form__content">
           <h2 class="form__head title">Закажи  переезд прямо сейчас со скидкой %</h2>
+          <h2 class="form__head-hidden">Закажи  переезд прямо сейчас</h2>
           <p class="form__subtitle">Мы перезвоним в течении 10 секунд</p>
           <div class="form__text">
             <form action="">
@@ -338,11 +339,10 @@
             </div>
           </div>
           <div class="form__footer">
-            <div class="form__footer-time">
-              <input type="time">
-            </div>
+            <div id="form__footer-time"></div>
             <div class="form__footer-btn">
-              <p class="form__footer button">Заказать со скидой</p>
+              <p class="form__footer-button">Заказать со скидой</p>
+              <p class="form__footer-button-hidden">Позвонить мне</p>
               <form action="">
                 <input type="checkbox" id="btn__checkbox">
                 <label for="btn__checkbox">Даю согласие на обработку данных</label>
@@ -352,5 +352,8 @@
         </div>
       </div>
     </div>
+    <script> 
+    document.getElementById("form__footer-time").innerHTML=Date();
+    </script>
   </body>
 </html>

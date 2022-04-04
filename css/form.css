@@ -1,93 +1,157 @@
-.h4-head { 
+.h4-head {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.form__content {
+  max-width: 45.5rem;
+  margin: 4.75rem auto 6.5rem auto;
+}
+.form__head-hidden {
+    display: none;
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
 }
-.form { }
-.form__content { 
-    max-width: 45.5rem;
-    margin: 7.75rem auto 6.5rem auto;
-}
-.form__head { }
 .form__subtitle {
-    margin: 0.625rem 0 1rem 0.625rem;
+  margin: 0.625rem 0 1rem 0.625rem;
 }
 .form__text {
-    text-align: center;
-    margin: 0 0 1.5rem 0;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
 }
-.form__text input:first-child{
-    margin: 0 4rem 0 0;
+.form__text input:first-child {
+  margin: 0 4rem 0 0;
 }
-.form__text input { 
-    width: 18.75rem;
-    height: 4rem;
-    border-bottom: 0.0625rem solid var(--black);
+.form__text input {
+  width: 18.75rem;
+  height: 4rem;
+  border-bottom: 0.0625rem solid var(--black);
 }
-.form__area { 
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin: 0 0 3.5rem 0;
+.form__area {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 0 3.5rem 0;
 }
-.form_area-region { }
 .form__area-region-head {
-    margin: 1rem 0 0 0;
- }
- .form__area-region-field {
-    width: 18.75rem;
-    height: 4rem;
-    border-bottom: 0.0625rem solid var(--black);
- }
-.form_area-city { }
-.form__area-city-head { 
-    margin: 1rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
-
+.form__area-region-field {
+  width: 18.75rem;
+  height: 4rem;
+  border-bottom: 0.0625rem solid var(--black);
+}
+.form__area-city-head {
+  margin: 1rem 0 0 0;
+}
 .form__pay {
-    margin: 0 0 3.5rem 0;
- }
-.form__pay-head { 
-    margin: 0 0 1.5rem 2rem;
+  margin: 0 0 3.5rem 0;
+}
+.form__pay-head {
+  margin: 0 0 1.5rem 2rem;
 }
 .form__pay-btn {
-    display: flex;
-    justify-content: center;
-    gap: 4.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 4.3rem;
 }
-.first-radio-btn { }
-.second-radio-btn { }
-.third-radio-btn { }
-.form__addservice { 
-    margin: 0 0 4.5rem 0;
+.form__addservice {
+  margin: 0 0 4.5rem 0;
 }
 .form__addservice-head {
-    width: 18.75rem;
-    background: url(/TestTask/Project-1/img/form-add-arrow.png) right no-repeat;
-    margin: 0 0 1rem 2rem;
- }
+  width: 18.75rem;
+  background: url(/TestTask/Project-1/img/form-add-arrow.png) right no-repeat;
+  margin: 0 0 1rem 2rem;
+}
 .addservice__header {
-    line-height: 2.5rem;
- }
-.addservice__arrow { 
-    
+  line-height: 2.5rem;
 }
-.form__addservice-checkbox form { 
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2.5rem;
-    row-gap: 2rem;
-    margin: 0 0 0 2rem ;
+.addservice__arrow {
 }
-.first__checkbox { }
-.second__checkbox { }
-.third__checkbox { }
-.fourth__checkbox { }
-.fifth__checkbox { }
-.form__footer { 
-    display: flex;
+.form__addservice-checkbox form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5rem;
+  row-gap: 2rem;
+  margin: 0 0 0 2rem;
 }
-.form__footer-time {
-   
- }
-.form__footer-btn { }
+.form__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+#form__footer-time {
+  text-align: center;
+  margin: auto;
+}
+.form__footer-button {
+  text-align: center;
+  padding: 1rem 4.6rem;
+  background-color: var(--red);
+  display: inline-block;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0 0 1rem 0;
+}
+.form__footer-button-hidden {
+  text-align: center;
+  padding: 1rem 4.6rem;
+  background-color: var(--red);
+  display: none;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0 0 1rem 0;
+}
+.form__footer-btn form input {
+  vertical-align: middle;
+}
+@media (max-width: 320px) {
+  .form__head-hidden {
+      display: block;
+  }
+  .form__head {
+      display: none;
+  }
+  .form__subtitle {
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .form__area {
+    display: none;
+  }
+  .form__pay {
+    display: none;
+  }
+  .form__addservice {
+    display: none;
+  }
+  .form__footer {
+    display: block;
+  }
+  .form__footer-btn form label {
+    font-size: 0.75rem;
+  }
+  .form__footer-btn form input {
+    vertical-align: middle;
+  }
+  .form__footer-button {
+    display: none;
+  }
+  .form__footer-button-hidden {
+    display: inline-block;
+  }
+  #form__footer-time {
+    display: none;
+  }
+  .form__text input {
+    width: 16.75rem;
+    height: 4rem;
+    border-bottom: 0.0625rem solid var(--black);
+  }
+  .form__text input:first-child {
+    margin: 0;
+  }
+}
