@@ -283,57 +283,53 @@
           </h2>
           <h2 class="form__head-hidden">Закажи переезд прямо сейчас</h2>
           <p class="form__subtitle">Мы перезвоним в течении 10 секунд</p>
-          <div class="form__text">
-            <form action="">
+          <form id="form" class="form__form">
+            <div class="form__text">
               <input type="text" placeholder="Ваше имя" />
               <input type="tel" placeholder="Телефон" />
-            </form>
-          </div>
-          <div class="form__area">
-            <div class="form_area-region">
-              <h4 class="form__area-region-head h4-head">Укажите область</h4>
-              <form action="" class="">
+            </div>
+            <div class="form__area">
+              <div class="form_area-region">
+                <h4 class="form__area-region-head h4-head">Укажите область</h4>
                 <select name="" id="" class="form__area-region-field">
                   <option value="">Минская</option>
                   <option value="">Брестская</option>
                   <option value="">Гомельская</option>
                 </select>
-              </form>
-            </div>
-            <div class="form_area-city">
-              <h4 class="form__area-city-head h4-head">Укажите город</h4>
-              <form action="">
+              </div>
+              <div class="form_area-city">
+                <h4 class="form__area-city-head h4-head">Укажите город</h4>
                 <select name="" id="" class="form__area-region-field">
                   <option value="">Брест</option>
                   <option value="">Солигорск</option>
                   <option value="">Мозырь</option>
                 </select>
-              </form>
+              </div>
             </div>
-          </div>
-          <div class="form__pay">
-            <h4 class="form__pay-head h4-head">Способ оплаты</h4>
-            <form action="" class="form__pay-btn">
-              <div class="first-radio-btn">
-                <input type="radio" id="first-radio-btn" />
-                <label for="first-radio-btn">Наличными курьеру</label>
+            <div class="form__pay">
+              <h4 class="form__pay-head h4-head">Способ оплаты</h4>
+              <div class="form__pay-btn">
+                <div class="first-radio-btn">
+                  <input type="radio" id="first-radio-btn" />
+                  <label for="first-radio-btn">Наличными курьеру</label>
+                </div>
+                <div class="second-radio-btn">
+                  <input type="radio" id="second-radio-btn" />
+                  <label for="second-radio-btn">Картой курьеру</label>
+                </div>
+                <div class="third-radio-btn">
+                  <input type="radio" id="third-radio-btn" />
+                  <label for="third-radio-btn">Банковский перевод</label>
+                </div>
               </div>
-              <div class="second-radio-btn">
-                <input type="radio" id="second-radio-btn" />
-                <label for="second-radio-btn">Картой курьеру</label>
-              </div>
-              <div class="third-radio-btn">
-                <input type="radio" id="third-radio-btn" />
-                <label for="third-radio-btn">Банковский перевод</label>
-              </div>
-            </form>
-          </div>
-          <div class="form__addservice">
-            <div class="form__addservice-head">
-              <h4 class="addservice__header h4-head">Дополнительные услуги</h4>
             </div>
-            <div class="form__addservice-checkbox">
-              <form action="">
+            <div class="form__addservice">
+              <div class="form__addservice-head">
+                <h4 class="addservice__header h4-head" onclick="toggleAddService()">
+                  Дополнительные услуги
+                </h4>
+              </div>
+              <div class="form__addservice-checkbox">
                 <div class="first__checkbox">
                   <input type="checkbox" id="first__checkbox" />
                   <label for="first__checkbox">Вызов замерщика</label>
@@ -356,22 +352,20 @@
                   <input type="checkbox" id="fifth__checkbox" />
                   <label for="fifth__checkbox">Крупногабаритные предметы</label>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
-          <div class="form__footer">
-            <div id="form__footer-time"></div>
-            <div class="form__footer-btn">
-              <p class="form__footer-button">Заказать со скидой</p>
-              <p class="form__footer-button-hidden">Позвонить мне</p>
-              <form action="">
-                <input type="checkbox" id="btn__checkbox" />
-                <label for="btn__checkbox"
-                  >Даю согласие на обработку данных</label
-                >
-              </form>
+            <div class="form__footer">
+              <div id="form__footer-time"></div>
+              <div class="form__footer-btn">
+                <button class="form__footer-button">Заказать со скидой</button>
+                <p class="form__footer-button-hidden">Позвонить мне</p>
+                <p>
+                  <input type="checkbox" id="btn__checkbox" />
+                  <label for="btn__checkbox">Даю согласие на обработку данных</label>
+                </p>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -415,8 +409,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document.getElementById("form__footer-time").innerHTML = Date();
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

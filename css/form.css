@@ -4,7 +4,6 @@
   font-weight: 700;
 }
 .form__content {
-  max-width: 45.5rem;
   margin: 4.75rem auto 6.5rem auto;
 }
 .form__head-hidden {
@@ -13,15 +12,24 @@
     font-weight: 600;
     text-align: center;
 }
+.form__head {
+  text-align: center;
+}
 .form__subtitle {
-  margin: 0.625rem 0 1rem 0.625rem;
+  margin: 0.625rem 0 1rem 0;
+  text-align: center;
+}
+.form__form {
+  max-width: 45rem;
+  margin: 0 auto;
+  
 }
 .form__text {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
   text-align: center;
   margin: 0 0 1.5rem 0;
-}
-.form__text input:first-child {
-  margin: 0 4rem 0 0;
 }
 .form__text input {
   width: 18.75rem;
@@ -30,8 +38,8 @@
 }
 .form__area {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
+  gap: 1rem;
   margin: 0 0 3.5rem 0;
 }
 .form__area-region-head {
@@ -49,32 +57,32 @@
   margin: 0 0 3.5rem 0;
 }
 .form__pay-head {
-  margin: 0 0 1.5rem 2rem;
+  margin: 0 0 1.5rem 0;
 }
 .form__pay-btn {
   display: flex;
-  justify-content: center;
-  gap: 4.3rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .form__addservice {
   margin: 0 0 4.5rem 0;
 }
 .form__addservice-head {
   width: 18.75rem;
-  background: url(/TestTask/Project-1/img/form-add-arrow.png) right no-repeat;
-  margin: 0 0 1rem 2rem;
+  background: url("../img/form-add-arrow.png") right no-repeat;
+  margin: 0 0 1rem 0;
 }
 .addservice__header {
   line-height: 2.5rem;
 }
 .addservice__arrow {
 }
-.form__addservice-checkbox form {
+.form__addservice-checkbox {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 2.5rem;
-  row-gap: 2rem;
-  margin: 0 0 0 2rem;
+  row-gap: 1rem;
 }
 .form__footer {
   display: grid;
@@ -107,51 +115,35 @@
 .form__footer-btn form input {
   vertical-align: middle;
 }
-@media (max-width: 320px) {
-  .form__head-hidden {
-      display: block;
-  }
-  .form__head {
-      display: none;
-  }
-  .form__subtitle {
-    margin: 1rem 0 0 0;
-    text-align: center;
-    font-size: 1rem;
+@media (max-width: 680px) {
+  .form__text{
+    flex-direction: column;
   }
   .form__area {
-    display: none;
+    flex-direction: column;
   }
-  .form__pay {
-    display: none;
+  .form__pay-btn {
+    flex-direction: column;
   }
-  .form__addservice {
-    display: none;
+  .form__addservice-checkbox {
+    flex-direction: column;
   }
   .form__footer {
-    display: block;
-  }
-  .form__footer-btn form label {
-    font-size: 0.75rem;
-  }
-  .form__footer-btn form input {
-    vertical-align: middle;
-  }
-  .form__footer-button {
-    display: none;
-  }
-  .form__footer-button-hidden {
-    display: inline-block;
+    grid-template-columns: 1fr;
+    text-align: left;
   }
   #form__footer-time {
-    display: none;
-  }
-  .form__text input {
-    width: 16.75rem;
-    height: 4rem;
-    border-bottom: 0.0625rem solid var(--black);
-  }
-  .form__text input:first-child {
-    margin: 0;
+    max-width: 20rem;
+    text-align: left;
+    margin: 0 0 1rem 0;
   }
 }
+@media (max-width: 375px){
+      .form__text input {
+        width: 100%;
+      }
+      .form__area-region-field {
+        width: 100%;
+      }
+}
+
