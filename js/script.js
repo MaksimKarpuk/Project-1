@@ -5,6 +5,8 @@ function submit(e) {
 const form = document.getElementById("form");
 form.addEventListener("submit", submit);
 
+
+
 const checkboxies = document.querySelector(".form__addservice-checkbox");
 function toggleAddService(){
     checkboxies.classList.toggle("isHidden")
