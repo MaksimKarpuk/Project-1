@@ -21,9 +21,9 @@ function toggleHiddenMenu (){
     hiddenMenu.classList.toggle("show")
     burgerMenuOff.style.display = "none"
 }
-const burgerMenuOn = document.querySelector (".banner__menu-hidden");
 function hiddenMenuOff() {
-    burgerMenuOn.classList.toggle("isHidden")
     burgerMenuOff.style.display = "block"
+    hiddenMenu.style.display = "none"
+
 }
 
