@@ -64,3 +64,6 @@ a:hover {
 .isHidden {
   display: none;
 }
+.show {
+  display: flex;
+}

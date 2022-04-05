@@ -15,8 +15,26 @@
       <div class="conteiner">
         <header class="header">
           <div class="header__logo logo">MOVEE</div>
-          <div class="banner__hamburger">
+          <div class="banner__hamburger" onclick="toggleHiddenMenu()">
             <span></span>
+          </div>
+          <div class="banner__menu-hidden">
+            <div class="banner__menu-hidden-header">
+              <div class="banner__menu-hidden-header-logo">MOVEE</div>
+              <div>
+                <img src="./img/banner__menu-hidden-header-arrow.png" onclick="hiddenMenuOff()" class="banner__menu-hidden-header-arrow" alt="">
+              </div>
+            </div>
+            <div class="banner__menu-hidden-items">
+              <div class="banner__menu-hidden-item">Главная</div>
+              <div class="banner__menu-hidden-item">Цены</div>
+              <div class="banner__menu-hidden-item">Автопарк</div>
+              <div class="banner__menu-hidden-item">Отзывы</div>
+              <div class="banner__menu-hidden-item">Контакты</div>
+            </div>
+            <div class="banner__menu-hidden-number">
+              <a href="tel:8(029)-999-12-13">8(029)-999-12-13</a>
+            </div>
           </div>
           <nav class="header__menu">
             <a href="#" class="header__link">Цены</a>
