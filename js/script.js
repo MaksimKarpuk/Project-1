@@ -53,7 +53,7 @@ link.innerHTML = "О нас"
 headerMenu.insertBefore (link, headerMenu.firstChild)
 link.remove()
 */
-
+//ВАЛИДАЦИЯ ФОРМЫ
 let form = document.querySelector(".form__form")
 let submitButton = form.querySelector(".form__footer-button")
 let formTextName = form.querySelector(".form__text-text")
@@ -76,6 +76,15 @@ let formFunction = function(event) {
   }
 }
 form.addEventListener("submit", formFunction)
+
+//ДОБАВЛЕНИЕ ГОРОДА 
+let formAreaRegion = document.querySelector("#formAreaRegion")
+let newRegion = document.createElement("option")
+let newPoint = function() {
+newRegion.innerHTML = formTextName.value
+formAreaRegion.insertBefore(newRegion, formAreaRegion.lastChild)
+}
+submitButton.addEventListener("click", newPoint)
 
 
 
