@@ -75,6 +75,7 @@ for (let i=0; i<=maxIndex; i++) {
 
 const scrollNext = () => {
   index===maxIndex ? index=0 : index+=1;
+  console.log(index);
   for (let i=0; i<=maxIndex; i++) {
     cars[i]===cars[index] ? cars[i].style.display = "flex" : cars[i].style.display = "none";
   }
@@ -83,29 +84,11 @@ next.addEventListener("click",scrollNext);
 
 const scrollPrev = () => {
   index===0 ? index=maxIndex : index-=1;
+  console.log(index);
   for (let i=0; i<=maxIndex; i++) {
     cars[i]===cars[index] ? cars[i].style.display = "flex" : cars[i].style.display = "none";
   }
 }
 prev.addEventListener("click",scrollPrev);
 
-// let list = document.querySelector (".car__description-list");
-// let listItem = list.querySelectorAll (".carItem");
-// let arr = listItem.length;
-// console.log (arr);
-// let listFunction = () => {
-//   for (let i=0; i<arr; i++) {
-//     listItem.style.background = "red"
-//   }
-// }
-// listItem.addEventListener("mouseover", listFunction);
 
-// let list = document.querySelector (".car__description-list");
-// let listItem = list.querySelectorAll (".carItem");
-// let listFunction = (event) => {
-//   let ev = event.target;
-//   for (let i=0; i<listItem.length; i++) {
-//     ev===listItem[i] ? listItem[i].style.background = "red" : listItem[i].style.background = "none";
-//   }
-// }
-// listItem.addEventListener("mouseover", listFunction);
