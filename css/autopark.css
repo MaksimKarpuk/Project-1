@@ -9,7 +9,13 @@
   text-align: center;
   margin: 0 0 3.75rem 0;
 }
-.car__image-hidden {
+.car__image-hiddenFirst {
+  display: none;
+}
+.car__image-hiddenSecond {
+  display: none;
+}
+.car__image-hiddenThird {
   display: none;
 }
 .autopark__selector {
@@ -31,6 +37,18 @@
 .autopark__description {
 }
 .car__description {
+  display: flex;
+  justify-content: space-between;
+}
+.car__descriptionFirstCar {
+  display: flex;
+  justify-content: space-between;
+}
+.car__descriptionSecondCar {
+  display: flex;
+  justify-content: space-between;
+}
+.car__descriptionThirdCar {
   display: flex;
   justify-content: space-between;
 }
@@ -103,8 +121,16 @@
   .car__description-after{
     display: none;
   }
-  .car__image-hidden {
+  .car__image-hiddenFirst {
     display: block;
+    margin: 0 auto;
+  }
+  .car__image-hiddenSecond {
+    display: none;
+    margin: 0 auto;
+  }
+  .car__image-hiddenThird {
+    display: none;
     margin: 0 auto;
   }
   .car__image {
@@ -132,7 +158,13 @@
   }
 }
 @media (max-width:700px){
-  .car__image-hidden {
+  .car__image-hiddenFirst {
+    max-width: 20rem;
+  }
+  .car__image-hiddenSecond {
+    max-width: 20rem;
+  }
+  .car__image-hiddenThird {
     max-width: 20rem;
   }
   .car__description-head {
@@ -145,7 +177,13 @@
   }
 }
 @media (max-width:340px){
-  .car__image-hidden {
+  .car__image-hiddenFirst {
+    max-width: 18rem;
+  }
+  .car__image-hiddenSecond {
+    max-width: 18rem;
+  }
+  .car__image-hiddenThird {
     max-width: 18rem;
   }
   .car__description-head {

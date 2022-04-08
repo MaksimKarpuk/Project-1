@@ -188,30 +188,82 @@
             <li class="autopark__selector-car">Грузовики</li>
           </ul>
           <img
-            src="./img/autopark__image.png"
-            class="car__image-hidden"
+            src="./img/autopark__first-image.png"
+            class="car__image-hiddenFirst"
+            alt="car-image"
+          />
+          <img
+            src="./img/autopark__second-image.png"
+            class="car__image-hiddenSecond"
+            alt="car-image"
+          />
+          <img
+            src="./img/autopark__third-image.png"
+            class="car__image-hiddenThird"
             alt="car-image"
           />
           <div class="autopark__description">
             <div class="car__description">
               <div class="car__description-before"></div>
-              <div class="car__description-info">
-                <h3 class="car__description-head subtitle">Газель 3 метра</h3>
-                <ul class="car__description-list">
-                  <li>Ширина 2 м</li>
-                  <li>Высота 2 м</li>
-                  <li>Объем 16 м³</li>
-                  <li>Грузоподъемность 1,5 т</li>
-                </ul>
-                <div class="car__description-btn button">Заказать</div>
-              </div>
-              <div class="car__description-image">
-                <img
-                  src="./img/autopark__image.png"
-                  class="car__image"
-                  alt="car-image"
-                />
-              </div>
+                <div class="car__descriptionCars">
+                  <div class="car__descriptionFirstCar car">
+                    <div class="car__description-info">
+                      <h3 class="car__description-head subtitle">Газель 3 метра</h3>
+                      <ul class="car__description-list">
+                        <li class="carItem">Ширина 2 м</li>
+                        <li class="carItem">Высота 2 м</li>
+                        <li class="carItem">Объем 16 м³</li>
+                        <li class="carItem">Грузоподъемность 1,5 т</li>
+                      </ul>
+                      <div class="car__description-btn button">Заказать</div>
+                    </div>
+                    <div class="car__description-image">
+                      <img
+                        src="./img/autopark__first-image.png"
+                        class="car__image"
+                        alt="car-image"
+                      />
+                    </div>
+                  </div>  
+                  <div class="car__descriptionSecondCar car">
+                    <div class="car__description-info">
+                      <h3 class="car__description-head subtitle">Каблук 2 метра</h3>
+                      <ul class="car__description-list">
+                        <li>Ширина 1.8 м</li>
+                        <li>Высота 1.2 м</li>
+                        <li>Объем 8 м³</li>
+                        <li>Грузоподъемность 0.8 т</li>
+                      </ul>
+                      <div class="car__description-btn button">Заказать</div>
+                    </div>
+                    <div class="car__description-image">
+                      <img
+                        src="./img/autopark__second-image.png"
+                        class="car__image"
+                        alt="car-image"
+                      />
+                    </div>
+                  </div>  
+                  <div class="car__descriptionThirdCar car">
+                    <div class="car__description-info">
+                      <h3 class="car__description-head subtitle">Газель 3 метра</h3>
+                      <ul class="car__description-list">
+                        <li>Ширина 3 м</li>
+                        <li>Высота 3 м</li>
+                        <li>Объем 20 м³</li>
+                        <li>Грузоподъемность 2 т</li>
+                      </ul>
+                      <div class="car__description-btn button">Заказать</div>
+                    </div>
+                    <div class="car__description-image">
+                      <img
+                        src="./img/autopark__third-image.png"
+                        class="car__image"
+                        alt="car-image"
+                      />
+                    </div>
+                  </div>
+                </div>    
               <div class="car__description-after"></div>
             </div>
           </div>
@@ -425,6 +477,7 @@
         </div>
       </div>
     </div>
+    <button disabled="disabled">Купить</button>
     <script src="./js/script.js"></script>
   </body>
 </html>
